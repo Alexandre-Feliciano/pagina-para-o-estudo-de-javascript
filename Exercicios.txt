@@ -1,0 +1,21 @@
+/// EXERCÍCIOS DE JAVASCRIPT ///
+
+Exercício 1: Olá mundo!. Crie um script que imprima "Olá mundo" no console.
+
+Exercício 2: Conversão de tipos. Dado o valor de uma string "1234", converta-o em um número exiba o tipo da variável no console.
+
+Exercício 3: Manipilaçãode strings. Dado uma string "Javascript é legal", escreva um código que cinte quantos caracteres a string tem e quantas palavras na frase.
+
+Exercício 4: Crie uma função que some dois números.
+
+Exercício 5: Crie uma função que receba uma string como parâmetro e retorne a mesma string com todas as letras em caixa alta.
+
+Exercício 6: Crie uma função que some dois números.
+
+Exercício 7: Arrays: Escreva um programa que declare um array de suas frutas favoritas e imprima cada fruta na lista usando um loop.
+
+Exercício 8: Crie uma função que some dois números.
+
+Exercício 9: Escreva um programa que pergunte ao usuário sua idade e imprima se ele é maior ou menor de idade..
+
+Exercício 10: Calcular a média de todos os números de um array.

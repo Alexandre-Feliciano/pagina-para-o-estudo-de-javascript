@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +8,194 @@
 </head>
 <body>
 
-    <h1>Javascript</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae distinctio labore sit corrupti cumque culpa quasi quam id delectus. A vel accusamus at obcaecati dolore deserunt quae, molestias eum aspernatur.</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis laborum voluptas incidunt rem libero. Officiis cumque incidunt unde quidem ipsa. Sapiente odio necessitatibus libero? Voluptates repellendus est quia assumenda eveniet!</p>
+   <header>
+
+    <img src="imagens/javascript.png" alt="imagem javascript">
+
+    <h1>JavaScript</h1>
+
+   </header>
+
+   <main>
+    <h2>Contexto histórico</h2>
+
+    <p>A linguagem de programação JavaScript surgiu em meados da década de 1990, sendo desenvolvida por Brendan Eich na Netscape Communications Corporation. Na época, a web estava ganhando popularidade rapidamente, e havia uma necessidade crescente por tecnologias que permitissem interatividade e dinamismo nas páginas da web.</p>
+
+    <p>JavaScript foi concebido como uma linguagem de script para ser executada no lado do cliente, ou seja, no navegador web do usuário. Sua função inicial era fornecer recursos para manipulação e interação com elementos HTML e CSS, tornando possível criar páginas web mais dinâmicas e interativas.</p>
+
+    <article>
+        <h2>Linguagem</h2>
+        
+        <p>JavaScript é uma linguagem de programação de alto nível, dinâmica e orientada a objetos. Sua sintaxe é inspirada em várias linguagens, incluindo C e Java, tornando-a relativamente fácil de aprender para quem já tem experiência em programação.</p>
+
+        <h3>Agora vamos abordar alguns aspectos básicos da linguagem e como a linguagem funciona:</h3>
+
+        <section class="Variaveis">
+
+            <h1>Variáveis</h1>
+
+            <p>Existem três forma de declarar variáveis em JavaScript usando as palavras-chave <code>´var´, ´let´</code> ou <code>´const´</code>. Ela é uma linguagem dinâmica, o que significa de que você não precisa especificar o tipo de dado que a variável irá receber.</p>
+
+            <div class="variavel">
+
+                <code>var nome = "João";</code>
+                <br>
+                <code>let idade = 30;</code>
+                <br>
+                <code>const peso = 70.5;</code>
+            </div>
+
+            <h3>Agora as diferenças...</h3>
+
+            <ul>
+            <li><code>var</code>: É a forma padrão de declarar variáveis.</li>
+            <li><code>let</code>: O valor da variável pode ser alterado ao longo do programa. </li>
+            <li><code>const</code>: A variável tem o valor constante e naõ pode ser mudado.</li>
+            </ul>
+        </section>
+
+        <p>Deixando o <code>´var´</code> um pouco de lado agora, devemos utilizar o <code>´const´</code> o <strong>máximo</strong> de vezes possível, para garantir a confiabilidade do código, isso falando profissionalmente.</p>
+
+        <section class="Dados">
+
+            <h1> Tipos de Dados</h1>
+
+            <p>JavaScript suporta uma variedade de operadores, incluindo aritméticos.</p>
+
+            <h2>Operadores aritméticos:</h2>
+            
+            <div class="aritméticos">
+
+                <li>Soma = <code>´+´</code>.</li>
+                <br>
+                <code>let numero1 = 5;</code>
+                <br>
+                <code>let numero2 = 5;</code>
+                <br>
+                <code>console.log(numero1 + numero2);</code>
+                <br>
+                
+                <li>Divisão = <code>´/´</code>.</li>
+                <br>
+                <code>let numero1 = 5;</code>
+                <br>
+                <code>let numero2 = 5;</code>
+                <br>
+                <code>console.log(numero1 / numero2);</code>
+                <br>
+
+                <li>Multiplição = <code>´*´</code>.</li>
+                <br>
+                <code>let numero1 = 5;</code>
+                <br>
+                <code>let numero2 = 5;</code>
+                <br>
+                <code>console.log(numero1 * numero2);</code>
+                <br>
+                
+                <li>Subtração = <code>´-´</code>.</li>
+                <br>
+                <code>let numero1 = 5;</code>
+                <br>
+                <code>let numero2 = 5;</code>
+                <br>
+                <code>console.log(numero1 - numero2);</code>
+                <br>
+                
+            </div>
+
+           <h2>Operadores de atribuíção:</h2>
+
+            <li>Igual = <code>´==´;</code></li>
+            <li>Mais ou igual = <code>´+=´;</code></li>
+            <li>Menos ou igual = <code>´-=´;</code></li>
+            <li>Diferente ou igual = <code>´!=´;</code></li>
+            <li>Compara o valor e o tipo de dado = <code>'===';</code></li>
+
+        </section>
+
+        <section class="condicao">
+
+            <h1>Estruturas de condição</h1>
+            
+            <h2>Estutura do <code>if</code></h2>
+            
+            <div class="if">
+                
+                <code>if(condicao){</code>
+                    <br>
+                <code>código</code>
+                <br>
+                <code>}else if (condicao2){</code>
+                    <br>
+                <code>código</code>
+                <br>
+                <code>}else{</code>
+                    <br>
+                    <code>condição falsa</code>
+                    <br>
+                <code>}</code>
+
+            </div>
+
+            <h1>Estruturas do <code>Switch</code></h1>
+            
+            <div class="switch">
+
+                <code>let fruta = "maçã";</code>
+                <br>
+                <code>switch(fruta){</code>
+                    <br>
+                <code>case "banana":</code>
+                <br>
+                <code>console.log("Banana é a fruta!");</code>
+                <br>
+                <code>break;</code>
+                <br>
+                <code>case "maçã":</code>
+                <br>
+                <code>console.log("Maçã é a fruta!");<code>
+                    <br>
+                    <code>break;</code>
+                    <br>
+                    <code>default</code>
+                    <br>
+                <code>}</code>
+                <br>
+                <code>console.log("Fruta não encontrada");<code>
+
+            </div>
+
+        
+            <li>O<code> ´break´</code> para a execução.</li>
+            <li>O <code>´default´</code> funciona como se fosse o else. </li>
+
+        </section>
+
+        <section class="repeticao">
+
+            <h1>Laços de repetição</h1>
+
+
+        </section>
+
+    </article>
+
+   </main>
+   <footer>
+    <section>
+
+        <ul>
+            <li>
+                <h3>Contatos</h3>
+                <a href="">Linkedin</a>
+                <a href="">Github</a>
+                <a href="">Instagram</a>
+                <a href=""></a>
+            </li>
+        </ul>
+
+    </section>
+   </footer>
 </body>
 </html>
