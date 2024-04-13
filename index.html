@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fundamentos do Javascript</title>
     <link rel="stylesheet" href="style.css">
-    
+    <link rel="shortcut icon" href="imagens/favicon-16x16.png" type="image/x-icon">
+    <script src="exercicios.js"></script>
 </head>
 <body>
 
@@ -13,26 +14,32 @@
 
     <img src="imagens/javascript.png" alt="imagem javascript">
 
-    <h1 class="titulo">JavaScript</h1>
+    <h1 class="titulo">Fundamentos <br> do <br>JavaScript</h1>
 
    </header>
 
    <main>
-    <h2 id="ctx">Contexto histórico</h2>
 
-    <p>A linguagem de programação JavaScript surgiu em meados da década de 1990, sendo desenvolvida por Brendan Eich na Netscape Communications Corporation. Na época, a web estava ganhando popularidade rapidamente, e havia uma necessidade crescente por tecnologias que permitissem interatividade e dinamismo nas páginas da web.</p>
+    <section class="Contexto">
 
-    <p>JavaScript foi concebido como uma linguagem de script para ser executada no lado do cliente, ou seja, no navegador web do usuário. Sua função inicial era fornecer recursos para manipulação e interação com elementos HTML e CSS, tornando possível criar páginas web mais dinâmicas e interativas.</p>
+        <h2>Contexto histórico</h2>
+    
+        <p>A linguagem de programação JavaScript surgiu em meados da década de 1990, sendo desenvolvida por Brendan Eich na Netscape Communications Corporation. Na época, a web estava ganhando popularidade rapidamente, e havia uma necessidade crescente por tecnologias que permitissem interatividade e dinamismo nas páginas da web.</p>
+    
+        <p>JavaScript foi concebido como uma linguagem de script para ser executada no lado do cliente, ou seja, no navegador web do usuário. Sua função inicial era fornecer recursos para manipulação e interação com elementos HTML e CSS, tornando possível criar páginas web mais dinâmicas e interativas.</p>
+
+
+    </section>
 
     <article>
 
-        <section class="contexto">
+        <section class="linguagem">
 
             <h2>Linguagem</h2>
             
             <p>JavaScript é uma linguagem de programação de alto nível, dinâmica e orientada a objetos. Sua sintaxe é inspirada em várias linguagens, incluindo C e Java, tornando-a relativamente fácil de aprender para quem já tem experiência em programação.</p>
     
-            <h2>Agora vamos abordar alguns aspectos básicos da linguagem e como a linguagem funciona:</h2>
+            <h2 id="text">Agora vamos abordar alguns aspectos básicos da linguagem e como a linguagem funciona:</h2>
 
         </section>
 
@@ -48,7 +55,8 @@
                 <br>
                 <code>let idade = 30;</code>
                 <br>
-                <code>const peso = 70.5;</code>
+                 <code>const peso = 70.5;</code>
+
             </div>
 
             <h2>Agora as diferenças...</h2>
@@ -75,50 +83,57 @@
 
                 <li>Soma = <code>´+´</code>.</li>
                 <br>
-               <pre>
+
+                <div class="soma">
+                    
                     <code>
                     const numero1 = 10;
+                    <br>
                     const numero2 = 20;
-
+                    <br>
                     console.log(numero1 + numero2);
                     </code>
-               </pre>
+
+                </div>
                
                <li>Divisão = <code>´/´</code>.</li>
                <br>
-               
-               <pre>
+
+               <div class="divisao">
                     <code>
                     const numero1 = 10;
+                    <br>
                     const numero2 = 30;
-
+                    <br>
                     console.log(numero1 / numero2);
                     </code>
-               </pre>
+               </div>
                
                <li>Multiplição = <code>´*´</code>.</li>
                <br>
                
-               <pre>
+               <div class="multiplicacao">     
                     <code>
                     const numero1 = 15;
+                    <br>
                     const numero2 = 90;
-
+                    <br>
                     console.log(numero1 * numero2);
                     </code>
-               </pre>
+               </div>
                
                <li>Subtração = <code>´-´</code>.</li>
                <br>
-               <pre>
+
+               <div class="subtracao"> 
                     <code>
                     const numero1 = 10;
+                    <br>
                     const numero2 = 10;
-
+                    <br>
                     console.log(numero1 - numero2);
                     </code>
-               </pre>
-                
+               </div> 
                 
             </div>
 
@@ -146,7 +161,7 @@
 
                 <h2>Estutura do <code>if</code></h2>
              
-              <pre>
+              <pre id="if">
                 <code>
                     if(condição){
 
@@ -168,12 +183,13 @@
             
             <div class="switch">
 
-                <h1>Estruturas do <code>Switch</code></h1>
+                <h2>Estruturas do <code>Switch</code></h2>
                 
                 <p>
-                    O  <code>´switch´</code> é uma estrutura de controle de fluxo em JavaScript que permite testar múltiplos casos e executar diferentes blocos de código com base no valor de uma expressão. O <code>´switch´</code> é útil quando você tem uma expressão que pode ter vários valores e deseja executar diferentes ações com base nesses valores.</p>
+                    O  <code>´switch´</code> é uma estrutura de controle de fluxo em JavaScript que permite testar múltiplos casos e executar diferentes blocos de código com base no valor de uma expressão. O <code>´switch´</code> é útil quando você tem uma expressão que pode ter vários valores e deseja executar diferentes ações com base nesses valores.
+                </p>
                 
-                <pre>
+                <pre id="swt">
                   <code>
                     const fruta = "maçã";
 
@@ -192,7 +208,6 @@
                 
             </div>
             
-            
             <li>O<code> ´break´</code> para a execução.</li>
             <li>O <code>´default´</code> É executado se nenhum dos casos corresponder à expressão. </li>
             
@@ -209,7 +224,7 @@
 
                 <p>O loop <code>´for´</code> é usado quando você sabe exatamente quantas vezes deseja executar o bloco de código. Ele consiste em três partes: inicialização, condição de continuação e expressão final.</p>
     
-                <pre>
+                <pre id="for">
                   <code>
                     for(inicialização; condição; expressão final){
                         // Código a ser executado repetidamente
@@ -225,7 +240,7 @@
                 
                 <p>O loop <code>´while´</code> executa um bloco de código enquanto uma condição especificada for verdadeira. A condição é verificada antes de cada iteração.</p>
 
-                <pre>
+                <pre id="while">
                   <code>
                     while(condição){
                         // Código a ser executado repetidamente
@@ -241,7 +256,7 @@
 
                 <p>O <code>´loop do...while´</code> é semelhante ao while, mas a condição é verificada após a execução do bloco de código, o que garante que o bloco de código seja executado pelo menos uma vez, mesmo se a condição inicialmente for falsa.</p>
 
-                <pre>
+                <pre id="do-while">
                     <code>
                       do{
                           // Código a ser executado repetidamente
@@ -251,7 +266,6 @@
                   
                 </div>
                 
-                
             </section>
             
             <section class="funcoes">
@@ -260,17 +274,17 @@
                 
                 <p>Vão criar variáveis para salvar algo, ou alguma operação. Básicamente vão salvar um trecho de código que vai ser reutilizado diversas vezes.</p>
                 
-                <div class="func">
+                <div class="funcoes">
                     
                     <h2>Estrutura da função</h2>
 
-                    <ol type="1">
-                        <li>argumentos não são obrigatórios!</li>
-                        <li>para exibir o resultado da função vc precisa evoca-lá.
+                    <ol id="list">
+                        <li>Argumentos não são obrigatórios!</li>
+                        <li>Para exibir o resultado da função vc precisa evoca-lá.
                         </li>
                     </ol>
                 
-                    <pre>
+                    <pre id="funcao1">
                         <code>
                         function NomeDaFuncao (argumento1, argumento2){
 
@@ -284,7 +298,7 @@
                     
                     <p>Exemplo com parâmetros/argumentos.</p>
                     
-                    <pre>
+                    <pre id="funcao2">
                         <code>
                         function cumprimentar(nome){
 
@@ -297,24 +311,23 @@
                     </pre>
                     
                 </div>
-                
-                
-                <h1>Arrow function</h1>
-                
-                <p>É básicamente uma função com uma sintaxe mais resumida.</p>
-                
+                  
                 <div class="arrow">
                     
+                    <h1>Arrow function</h1>
+                    
+                    <p>É básicamente uma função com uma sintaxe mais resumida.</p>
+
                     <h2>Estrutura da arrow função</h2>
                     
-                    <ol>
+                    <ol id="listArrow">
                         <li>Nescessário que crie uma variável constante;</li>
                         <li>O nome da variável é o nome da função;</li>
                         <li>O ponteiro ´=>´ vai apontar para o que a função vai realizar;</li>
                         <li>A evocação vai ser da mesma maneira que a função comum.</li>
                     </ol>
 
-                    <pre>
+                    <pre id="arrow">
                         <code>
                         const testeArrow = () => console.log("Isso também é uma função.");
                         
@@ -326,26 +339,25 @@
                 
             </section>
             
-            <section class="hoist">
+            <section class="hoisting">
                 
                 <h1>Hoisting</h1>
                 
                 <p>Funciona como instruções e em várias linguagens ele não existe. Quando a gente declara uma função com a variável var, ela são inçadas pra cima do código. Permite que vc teste o código antes da função.</p>
                 
-                <div class="hoisting">
                     
-                    <pre>
-                        <code>
-                        testeHoisting();
+                <pre id="hoisting">
+                    <code>
+                    testeHoisting();
     
-                        function testeHoisting(){
+                    function testeHoisting(){
                             
-                            console.log("Deu certo!");
+                        console.log("Deu certo!");
                             
-                        }
-                        </code>
-                    </pre>
-                </div>
+                    }
+                    </code>
+                </pre>
+                
         </section>
 
         <section class="array-listas">
@@ -354,13 +366,13 @@
 
             <p>Isso é uma lista:</p>
 
-            <pre>
+            <pre class="listas-array">
                 <code>const numeros = [1,2,3,4]</code>
             </pre>
             
             <p>Acessando um índice da lista:</p>
             
-            <pre>
+            <pre class="listas-array">
                 <code>
                 console.log(num [1]);
                 console.log(num [2]);
@@ -370,7 +382,7 @@
 
             <p>Colocando itens dentro da lista usando o <code>´push()´</code>.</p>
             
-            <pre>
+            <pre class="listas-array">
                 <code>
                 num.push(5);
                 num.push(6);
@@ -381,7 +393,7 @@
             
             <p>Excluíndo itens dentro da lista usando o <code>´pop()´</code>.</p>
             
-            <pre>
+            <pre class="listas-array">
                 <code>
                 num.pop(5);
                     
@@ -397,7 +409,7 @@
 
             <h2>Concatenação:</h2>
             
-            <pre>
+            <pre class="manipulaçãoString">
                 <code>
                 const minhaString = "Aooooooo";
 
@@ -409,7 +421,7 @@
             
             <h2>Interpolação:</h2>
             
-            <pre>
+            <pre class="manipulaçãoString">
                 <code>
                 const minhaString = "Minha";
 
@@ -423,7 +435,7 @@
 
             <p>Usado para contar a quantidade de caracteres.</p>
             
-            <pre>
+            <pre class="manipulaçãoString">
                 <code>
                 const nomeQualquer = "Juvenal";
                     
@@ -433,7 +445,7 @@
             
             <li>A gente pode acessar algum caractere pelo índice.</li>
             
-            <pre>
+            <pre class="manipulaçãoString">
                 <code>console.log(nomeQualquer [5]);</code>
             </pre>
             
@@ -441,7 +453,7 @@
 
             <p>Usado para colocar o texto em caixa alta.</p>
             
-            <pre>
+            <pre class="manipulaçãoString">
                 <code>
                 const nomeQualquer2 = "Arnold Schwarzenegger ";
                     
@@ -458,21 +470,38 @@
             
             <li>Valor de Pi:</li>
 
-            <pre>
+            <pre class="mathCode">
                 <code>cosole.log(Math.PI);</code>
             </pre>
             
             <li>Arrendondar um número:</li>
 
-            <pre>
+            <pre class="mathCode">
                 <code>cosole.log(Math.round(3.8));</code>
             </pre>
             
             <li>Tirar raíz quadrada de um número:</li>
 
-            <pre>
+            <pre class="mathCode">
                 <code>cosole.log(Math.sqrt(16));</code>
             </pre>
+
+        </section>
+
+        <section class="agradecimentos">
+
+            <h1>É Isso...</h1>
+
+            <p>Então pessoal esses são os principais fundamentos da linguagem JavaScript, mas não muda o fato de se aprofundar ainda mais, como diz o ditado: conhecimento nunca é demais.</p>
+
+            <p>Logo a baixo tem o link de um pequeno exercício que produzi para vocês colocarem o conhecimento de vocês em prática.
+            </p>
+
+            
+            <a href="Exercicios.txt" download="Exercicios.txt" target="_blank">
+                <button>Exercício</button>
+            </a>
+            
 
         </section>
 
@@ -484,13 +513,13 @@
 
         <ul>
             <h3>Contatos</h3>
-            <li>
-                <ul>
-                    <a href="https//:www.linkedin.com/in/alexandre=feliciano-b9b707268?utm_sources=share&utm_campaign=share_via&utm_medium=android_app" target="_blank">Linkedin</a>
-                    <a href="https://github.com/Alexandre-Feliciano" target="_blank">Github</a>
-                </ul>
+            
+            <ol>
+                <a href="https//:www.linkedin.com/in/alexandre=feliciano-b9b707268?utm_sources=share&utm_campaign=share_via&utm_medium=android_app" target="_blank">Linkedin</a>
+                <a href="https://github.com/Alexandre-Feliciano" target="_blank">Github</a>
+            </ol>
                 
-            </li>
+            
         </ul>
         <section>&copy; 2024 Alexandre Feliciano. Todos os direitos reservados</section>
 

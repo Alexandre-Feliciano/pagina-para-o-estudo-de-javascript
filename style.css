@@ -27,8 +27,21 @@ body{
 }
 
 header{
-    padding-bottom: 30px;
-    margin-bottom: 150px;
+    padding: 20px;
+    text-align: center;
+    
+
+    margin-bottom: 30px;
+}
+
+main{
+    padding: 0 20px 20px 20px ;
+    
+    min-width: 320px;
+}
+
+article{
+    margin-bottom: 20px;
 }
 
 img{
@@ -40,33 +53,10 @@ img{
     border-radius: 10px;
 }
 
-.titulo{
-    font-size: 65px;
-    overflow: auto;
-    margin-left:9px;
-}
-
-.contexto{
-    margin:50, ;
-}
-#ctx{
-    font-size: 30px;
-}
-
-.variaveis{
-
-}
-
-
-footer{
-     border: solid var(--amarelo);
-     border-radius: 20px;
-     padding: 10px;
-
-}
-
 h1{
     color: var(--amarelo);
+    font-size: 40px;
+
 }
 
 h2{
@@ -75,4 +65,514 @@ h2{
 
 p{
     color: var(--branco);
+    text-align: justify;
+}
+
+ul{
+    color: var(--branco);
+}
+
+li{
+    color: var(--branco);
+    font-size: 15px;
+}
+
+footer {
+    border: solid var(--amarelo);
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+footer a{
+    padding-right: 10px;
+    text-decoration: none;
+    color: var(--amarelo);
+}
+
+.titulo{
+    font-size: 50px;
+    overflow: auto;
+    margin-left:9px;
+    text-align: left;
+    padding-left:20px;
+    height: 238px;
+}
+
+.Contexto{
+    margin-top:30px;
+    margin-bottom:30px;
+
+}
+.Contexto h2{
+    margin-bottom: 20px;
+
+}
+
+.linguagem{
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
+.linguagem h2{
+    margin-bottom:20px;
+}
+
+#text{
+    margin-top: 10px;
+}
+
+.Variaveis{
+    margin: 30px ;
+
+}
+
+.Variaveis p{
+    margin-top: 15px ;
+    margin-bottom: 10px;
+
+}
+
+.Variaveis h2 {
+    margin-top: 15px ;
+    margin-bottom: 20px;
+    
+}
+
+.variavel{
+    color: var(--branco);
+    border: solid var(--amarelo);
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.Dados {
+    margin: 30px;
+}
+
+.Dados p{
+    margin-top:15px;
+    margin-bottom: 10px;
+}
+
+.Dados h2{
+    margin-top:15px;
+    margin-bottom: 20px;
+}
+
+.soma{
+    color: var(--branco);
+    border: solid var(--amarelo);
+    border-radius: 5px;
+    text-align: start;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.divisao{
+    color: var(--branco);
+    border: solid var(--amarelo);
+    border-radius: 5px;
+    text-align: start;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.multiplicacao{
+    color: var(--branco);
+    border: solid var(--amarelo);
+    border-radius: 5px;
+    text-align: start;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.subtracao{
+    color: var(--branco);
+    border: solid var(--amarelo);
+    border-radius: 5px;
+    text-align: start;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.if{
+    margin: 30px ;
+}
+
+.if h2{
+    margin-top:15px;
+    margin-bottom: 20px;
+}
+
+.if p{
+    margin-top:15px;
+    margin-bottom: 20px;
+}
+
+#if{
+    color: var(--branco);
+    border: solid var(--amarelo);
+    border-radius: 5px;
+    text-align: start;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.switch{
+    margin: 30px;
+}
+
+.switch h2{
+    margin-top:15px;
+    margin-bottom: 20px;
+}
+
+.switch p{
+    margin-top:15px;
+    margin-bottom: 20px;
+}
+
+.switch li{
+    margin: 30px;
+    font-size: 30px;
+}
+
+#swt{
+    color: var(--branco);
+    border: solid var(--amarelo);
+    border-radius: 5px;
+    text-align: start;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.repeticao{
+    margin: 30px;
+}
+
+.repeticao h2{
+    margin-top:15px;
+    margin-bottom: 20px;
+}
+
+.for{
+    margin: 30px;
+}
+
+.for p{
+    margin-top:15px;
+    margin-bottom: 20px;
+}
+
+.for h2{
+    margin-top:15px;
+    margin-bottom: 20px;
+}
+
+#for{
+    color: var(--branco);
+    border: solid var(--amarelo);
+    border-radius: 5px;
+    text-align: start;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.while{
+    margin: 30px;
+}
+
+.while p {
+    margin-top:15px;
+    margin-bottom: 20px;
+}
+
+.while h2 {
+    margin-top:15px;
+    margin-bottom: 20px;
+}
+
+#while{
+    color: var(--branco);
+    border: solid var(--amarelo);
+    border-radius: 5px;
+    text-align: start;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.do-while{
+    margin: 30px;
+}
+
+.do-while p{
+    margin-top:15px;
+    margin-bottom: 20px;
+}
+
+.do-while h2{
+    margin-top:15px;
+    margin-bottom: 20px;
+}
+
+#do-while{
+    color: var(--branco);
+    border: solid var(--amarelo);
+    border-radius: 5px;
+    text-align: start;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.funcoes{
+    margin: 30px;
+}
+
+.funcoes p{
+    margin-top:15px;
+    margin-bottom: 20px;
+}
+
+.funcoes h2{
+    margin-top:15px;
+    margin-bottom: 20px;
+}
+
+#list{
+    margin-top:15px;
+    margin-bottom: 20px;
+
+}
+
+#funcao1{
+    color: var(--branco);
+    border: solid var(--amarelo);
+    border-radius: 5px;
+    text-align: start;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#funcao2{
+    color: var(--branco);
+    border: solid var(--amarelo);
+    border-radius: 5px;
+    text-align: start;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.arrow{
+    margin: 30px;
+}
+
+.arrow p{
+    margin-top:15px;
+    margin-bottom: 20px;
+}
+
+.arrow h2{
+    margin-top:15px;
+    margin-bottom: 20px;
+}
+
+#listArow{
+    margin-top:15px;
+    margin-bottom: 20px;
+
+}
+
+#arrow{
+    color: var(--branco);
+    border: solid var(--amarelo);
+    border-radius: 5px;
+    text-align: start;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.hoisting{
+    margin: 30px;
+}
+
+.hoisting p {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.hoisting h2 {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+#hoisting{
+    color: var(--branco);
+    border: solid var(--amarelo);
+    border-radius: 5px;
+    text-align: start;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.array-listas{
+    margin: 30px;
+}
+
+.array-listas p{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.array-listas h2{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.listas-array{
+    color: var(--branco);
+    border: solid var(--amarelo);
+    border-radius: 5px;
+    text-align: start;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.Strings{
+    margin: 30px;
+}
+
+.Strings p{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.Strings h2{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.Strings li{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.manipulaçãoString{
+    color: var(--branco);
+    border: solid var(--amarelo);
+    border-radius: 5px;
+    text-align: start;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.math{
+    margin: 30px;
+}
+
+.math p {
+    margin-top: 15px;
+    margin-bottom: 20px
+}
+
+.math h2{
+    margin-top: 15px;
+    margin-bottom: 20px
+}
+
+.math li{
+    margin-top: 15px;
+    margin-bottom: 20px
+}
+
+.mathCode{
+    color: var(--branco);
+    border: solid var(--amarelo);
+    border-radius: 5px;
+    text-align: start;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.agradecimentos p{
+    margin-top: 10px;
+}
+
+.agradecimentos a{
+    text-decoration: none;
+    
+}
+
+.agradecimentos button{
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 20px;
+    border: solid var(--amarelo);
+    background-color:var(--marrom);
+    color: var(--branco);
+    font-family:'Poppins' sans-serif ;
+    cursor: pointer;
+    
+}
+
+@media screen and (max-width:768px){
+
+    header{
+        margin-bottom: 30px;
+    }
+
+    header .titulo{
+        font-size: 40px;
+        text-align: left;
+        padding-left: 15px;
+    }
+
+    header img{
+        height: 170px;
+    }
+
+    main{
+        font-size: 14px;
+    }
+
+    footer{
+        font-size: 14px;
+    }
+
+   
 }
