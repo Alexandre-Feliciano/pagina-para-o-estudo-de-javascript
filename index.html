@@ -6,7 +6,6 @@
     <title>Fundamentos do Javascript</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="imagens/favicon-16x16.png" type="image/x-icon">
-    <script src="exercicios.js"></script>
 </head>
 <body>
 
@@ -49,13 +48,13 @@
 
             <p>Existem três forma de declarar variáveis em JavaScript usando as palavras-chave <code>´var´, ´let´</code> ou <code>´const´</code>. Ela é uma linguagem dinâmica, o que significa de que você não precisa especificar o tipo de dado que a variável irá receber.</p>
 
-            <div class="variavel">
+            <div class="variavelCode">
 
                 <code>var nome = "João";</code>
                 <br>
                 <code>let idade = 30;</code>
                 <br>
-                 <code>const peso = 70.5;</code>
+                <code>const peso = 70.5;</code>
 
             </div>
 
@@ -66,9 +65,11 @@
             <li><code>let</code>: O valor da variável pode ser alterado ao longo do programa. </li>
             <li><code>const</code>: A variável tem o valor constante e naõ pode ser mudado.</li>
             </ul>
+
+            <p>Deixando o <code>´var´</code> um pouco de lado agora, devemos utilizar o <code>´const´</code> o <strong>máximo</strong> de vezes possível, para garantir a confiabilidade do código, isso falando profissionalmente.</p>
+                
         </section>
 
-        <p>Deixando o <code>´var´</code> um pouco de lado agora, devemos utilizar o <code>´const´</code> o <strong>máximo</strong> de vezes possível, para garantir a confiabilidade do código, isso falando profissionalmente.</p>
 
         <section class="Dados">
 
@@ -84,7 +85,7 @@
                 <li>Soma = <code>´+´</code>.</li>
                 <br>
 
-                <div class="soma">
+                <div class="AritmeticosCode">
                     
                     <code>
                     const numero1 = 10;
@@ -99,7 +100,7 @@
                <li>Divisão = <code>´/´</code>.</li>
                <br>
 
-               <div class="divisao">
+               <div class="AritmeticosCode">
                     <code>
                     const numero1 = 10;
                     <br>
@@ -112,7 +113,7 @@
                <li>Multiplição = <code>´*´</code>.</li>
                <br>
                
-               <div class="multiplicacao">     
+               <div class="AritmeticosCode">     
                     <code>
                     const numero1 = 15;
                     <br>
@@ -125,7 +126,7 @@
                <li>Subtração = <code>´-´</code>.</li>
                <br>
 
-               <div class="subtracao"> 
+               <div class="AritmeticosCode"> 
                     <code>
                     const numero1 = 10;
                     <br>
@@ -157,29 +158,24 @@
 
             <h1>Estruturas de condição</h1>
             
-            <div class="if">
-
-                <h2>Estutura do <code>if</code></h2>
+            <h2>Estutura do <code>if</code></h2>
              
-              <pre id="if">
-                <code>
-                    if(condição){
-
-                        //código aqui
-
-                    }else if(condicao2){
-
-                        //Código aqui
-
-                    }else{
-
-                        //condição falsa
+          <div class="condicaoCode">
+            <code>
+                if(condição){
+                <br>
+                    //código aqui
+                <br>
+                }else if(condicao2){
+                <br>
+                    //Código aqui
+                <br>
+                }else{
+                <br>
+                    //condição falsa
                     }
-                </code>
-              </pre>
-              
-            </div>
-            
+            </code>
+        </div>
             
             <div class="switch">
 
@@ -189,22 +185,31 @@
                     O  <code>´switch´</code> é uma estrutura de controle de fluxo em JavaScript que permite testar múltiplos casos e executar diferentes blocos de código com base no valor de uma expressão. O <code>´switch´</code> é útil quando você tem uma expressão que pode ter vários valores e deseja executar diferentes ações com base nesses valores.
                 </p>
                 
-                <pre id="swt">
+                <div class="condicaoCode">
                   <code>
                     const fruta = "maçã";
-
+                    <br>
+                    <br>
                     switch(fruta){
-                        case "banana":
+                        <br>
+                         case "banana":
+                         <br>
                             console.log("banana é a fruta");
-                        break;
-                        case "maçã":
+                            <br>
+                            break;
+                            <br>
+                            case "maçã":
+                            <br>
                             console.log("maçã é a fruta");
-                        break;
-                        default:
+                            break;
+                            <br>
+                            default:
+                            <br>
+                            <br>
                             console.log("Fruta não encontrada!");
                     }
                     </code>
-                </pre>
+                </div>
                 
             </div>
             
@@ -224,13 +229,16 @@
 
                 <p>O loop <code>´for´</code> é usado quando você sabe exatamente quantas vezes deseja executar o bloco de código. Ele consiste em três partes: inicialização, condição de continuação e expressão final.</p>
     
-                <pre id="for">
+                <div class="repeticaoCode">
                   <code>
                     for(inicialização; condição; expressão final){
+                        <br>
                         // Código a ser executado repetidamente
+                        <br>
                     }
                     </code>
-                </pre>
+                </div>
+
             </div>
             
             
@@ -240,13 +248,15 @@
                 
                 <p>O loop <code>´while´</code> executa um bloco de código enquanto uma condição especificada for verdadeira. A condição é verificada antes de cada iteração.</p>
 
-                <pre id="while">
+                <div class="repeticaoCode">
                   <code>
                     while(condição){
+                        <br>
                         // Código a ser executado repetidamente
+                        <br>
                     }
                     </code>
-                </pre>
+                </div>
 
             </div>
 
@@ -256,13 +266,14 @@
 
                 <p>O <code>´loop do...while´</code> é semelhante ao while, mas a condição é verificada após a execução do bloco de código, o que garante que o bloco de código seja executado pelo menos uma vez, mesmo se a condição inicialmente for falsa.</p>
 
-                <pre id="do-while">
+                <div class="repeticaoCode">
                     <code>
                       do{
-                          // Código a ser executado repetidamente
-                      }while(condição);
+                        <br>
+                        // Código a ser executado repetidamente
+                        <br>
+                        }while(condição);
                       </code>
-                  </pre>
                   
                 </div>
                 
@@ -274,7 +285,7 @@
                 
                 <p>Vão criar variáveis para salvar algo, ou alguma operação. Básicamente vão salvar um trecho de código que vai ser reutilizado diversas vezes.</p>
                 
-                <div class="funcoes">
+                <div class="funcoes2">
                     
                     <h2>Estrutura da função</h2>
 
@@ -284,31 +295,45 @@
                         </li>
                     </ol>
                 
-                    <pre id="funcao1">
+                    <div class="funcaoCode">
+
                         <code>
                         function NomeDaFuncao (argumento1, argumento2){
+                        <br>
 
                         //corpo da função, aqui vai ser escrito o código da função!
+                        <br>
                 
                         }
-
+                        <br>
+                        <br>
                         NomeDaFuncao()
                         </code>
-                    </pre>
+                    
+                    </div>
                     
                     <p>Exemplo com parâmetros/argumentos.</p>
                     
-                    <pre id="funcao2">
+                    <div class="funcaoCode">
+                        
                         <code>
                         function cumprimentar(nome){
-
-                            console.log("Eaee!" + nome);
+                        <br>
+                        <br>
+                        
+                        console.log("Eaee!" + nome);
+                        <br>
+                        <br>
                         
                         }
-                            
+                    
+                        <br>
+                        <br>
                         cumprimentar("Fulano");
                         </code>
-                    </pre>
+
+                    </div>
+                    
                     
                 </div>
                   
@@ -327,14 +352,17 @@
                         <li>A evocação vai ser da mesma maneira que a função comum.</li>
                     </ol>
 
-                    <pre id="arrow">
+
+                    <div class="funcaoCode">
                         <code>
                         const testeArrow = () => console.log("Isso também é uma função.");
-                        
+                        <br>
+                        <br>
                         testeArrow();
-                        
-                    </code>
-                    </pre>
+                            
+                        </code>
+                    </div>
+                    
                 </div>
                 
             </section>
@@ -346,17 +374,26 @@
                 <p>Funciona como instruções e em várias linguagens ele não existe. Quando a gente declara uma função com a variável var, ela são inçadas pra cima do código. Permite que vc teste o código antes da função.</p>
                 
                     
-                <pre id="hoisting">
+                <div id="hoisting">
+                
                     <code>
-                    testeHoisting();
-    
-                    function testeHoisting(){
+                        testeHoisting();
+                        <br>
+                        <br>
+                        
+                        function testeHoisting(){
+                            <br>
+                            <br>
                             
-                        console.log("Deu certo!");
+                            console.log("Deu certo!");
+                            <br>
+                            <br>
                             
-                    }
+                        }
+                        
+        
                     </code>
-                </pre>
+                </div>
                 
         </section>
 
@@ -366,40 +403,52 @@
 
             <p>Isso é uma lista:</p>
 
-            <pre class="listas-array">
+            <div class="listas-arrayCode">
+
                 <code>const numeros = [1,2,3,4]</code>
-            </pre>
+
+            </div>
+            
             
             <p>Acessando um índice da lista:</p>
             
-            <pre class="listas-array">
-                <code>
-                console.log(num [1]);
-                console.log(num [2]);
-                console.log(num [3]);
-                </code>
-            </pre>
+            
+            <div class="listas-arrayCode">
 
+                <code>
+                    console.log(num [1]);
+                    <br>
+                    console.log(num [2]);
+                    <br>
+                    console.log(num [3]);
+                    <br>
+                    </code>
+            </div>
+            
             <p>Colocando itens dentro da lista usando o <code>´push()´</code>.</p>
             
-            <pre class="listas-array">
+            <div class="listas-arrayCode">
                 <code>
-                num.push(5);
-                num.push(6);
-                    
-                console.log(num)
+                    num.push(5);
+                    <br>
+                    num.push(6);
+                    <br>
+                    <br>
+                    console.log(num)
                 </code>
-            </pre>
+            </div>
             
             <p>Excluíndo itens dentro da lista usando o <code>´pop()´</code>.</p>
-            
-            <pre class="listas-array">
+
+            <div class="listas-arrayCode">
                 <code>
-                num.pop(5);
-                    
-                console.log(num)
+                    num.pop(5);
+                    <br>
+                    <br>
+                        
+                    console.log(num)
                 </code>
-            </pre>
+            </div>
             
         </section>
 
@@ -409,57 +458,63 @@
 
             <h2>Concatenação:</h2>
             
-            <pre class="manipulaçãoString">
+            <div class="manipulacaoStringCode">
                 <code>
-                const minhaString = "Aooooooo";
-
-                const minhaString2 = minhaString + "Potênciaaa";
-                    
-                console.log(minhaString2);
+                    const minhaString = "Aooooooo";
+                    <br>                    
+                    const minhaString2 = minhaString + "Potênciaaa";
+                    <br>
+                    <br>
+                    console.log(minhaString2);
                 </code>
-            </pre>
+            </div>
             
             <h2>Interpolação:</h2>
             
-            <pre class="manipulaçãoString">
+            <div class="manipulacaoStringCode">
                 <code>
-                const minhaString = "Minha";
-
-                const minhaString3 = `${minhaString}  Noossaaa`
-
-                console.log(minhaString3);
+                    const minhaString = "Minha";
+                    <br>
+                    const minhaString3 = `${minhaString}  Noossaaa`
+                    <br>
+                    <br>
+                    console.log(minhaString3);
                 </code>
-            </pre>
+            </div>
             
             <h2>Length:</h2>
 
             <p>Usado para contar a quantidade de caracteres.</p>
             
-            <pre class="manipulaçãoString">
+            <div class="manipulacaoStringCode">
                 <code>
-                const nomeQualquer = "Juvenal";
-                    
-                console.log(nomeQualquer.length);
+                    const nomeQualquer = "Juvenal";
+                    <br>
+                    <br>
+                        
+                    console.log(nomeQualquer.length);
                 </code>
-            </pre>
+            </div>
             
             <li>A gente pode acessar algum caractere pelo índice.</li>
-            
-            <pre class="manipulaçãoString">
-                <code>console.log(nomeQualquer [5]);</code>
-            </pre>
+
+            <div class="manipulacaoStringCode">
+            <code>console.log(nomeQualquer [5]);</code>
+            </div>
             
             <h2>UpperCase:</h2>
-
+            
             <p>Usado para colocar o texto em caixa alta.</p>
             
-            <pre class="manipulaçãoString">
+            <div class="manipulacaoStringCode">
                 <code>
-                const nomeQualquer2 = "Arnold Schwarzenegger ";
-                    
-                console.log(nomeQualquer2.toUpperCase());
+                    const nomeQualquer2 = "Arnold Schwarzenegger ";
+                    <br>
+                    <br>
+                        
+                    console.log(nomeQualquer2.toUpperCase());
                 </code>
-            </pre>
+            </div>
         </section>
         
         <section class="math">
@@ -470,21 +525,21 @@
             
             <li>Valor de Pi:</li>
 
-            <pre class="mathCode">
+            <div class="mathCode">
                 <code>cosole.log(Math.PI);</code>
-            </pre>
+            </div>
             
             <li>Arrendondar um número:</li>
 
-            <pre class="mathCode">
+            <div class="mathCode">
                 <code>cosole.log(Math.round(3.8));</code>
-            </pre>
+            </div>
             
             <li>Tirar raíz quadrada de um número:</li>
 
-            <pre class="mathCode">
+            <div class="mathCode">
                 <code>cosole.log(Math.sqrt(16));</code>
-            </pre>
+            </div>
 
         </section>
 
@@ -498,10 +553,17 @@
             </p>
 
             
-            <a href="Exercicios.txt" download="Exercicios.txt" target="_blank">
+            <a href="Exercício de Javascript.pdf" download="Exercício de Javascript" target="_blank">
                 <button>Exercício</button>
             </a>
             
+        </section>
+
+        <section class="referencias">
+
+            <h1>Referências</h1>
+
+            <p>Matheus Battisti-Hora de Codar. "Curso de JavaScript com Exeecícios e Projetos". Disponível em: <a href="https://youtu.be/OYPbr6ZG3pc?si=5_H8B5O1z14iBFA_">https://youtu.be/OYPbr6ZG3pc?si=5_H8B5O1z14iBFA</a>. Públicado em 31 de Julho de 2023.</p>
 
         </section>
 
@@ -518,12 +580,12 @@
                 <a href="https//:www.linkedin.com/in/alexandre=feliciano-b9b707268?utm_sources=share&utm_campaign=share_via&utm_medium=android_app" target="_blank">Linkedin</a>
                 <a href="https://github.com/Alexandre-Feliciano" target="_blank">Github</a>
             </ol>
-                
-            
+
         </ul>
         <section>&copy; 2024 Alexandre Feliciano. Todos os direitos reservados</section>
 
     </section>
    </footer>
+
 </body>
 </html>

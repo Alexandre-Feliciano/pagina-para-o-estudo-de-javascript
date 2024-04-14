@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
 *{
     margin: 0;
     padding: 0;
@@ -24,6 +23,7 @@ body{
     padding: 20px;
     margin: 20px;
     font-family:'Poppins', sans-serif ;
+    overflow-x: hidden;
 }
 
 header{
@@ -35,8 +35,7 @@ header{
 }
 
 main{
-    padding: 0 20px 20px 20px ;
-    
+    padding: 10px 20px;
     min-width: 320px;
 }
 
@@ -90,6 +89,10 @@ footer a{
     color: var(--amarelo);
 }
 
+footer section{
+    color: var(--branco);
+}
+
 .titulo{
     font-size: 50px;
     overflow: auto;
@@ -139,7 +142,8 @@ footer a{
     
 }
 
-.variavel{
+.variavelCode{
+    display: block;
     color: var(--branco);
     border: solid var(--amarelo);
     border-radius: 5px;
@@ -162,37 +166,8 @@ footer a{
     margin-bottom: 20px;
 }
 
-.soma{
-    color: var(--branco);
-    border: solid var(--amarelo);
-    border-radius: 5px;
-    text-align: start;
-    font-size: 20px;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.divisao{
-    color: var(--branco);
-    border: solid var(--amarelo);
-    border-radius: 5px;
-    text-align: start;
-    font-size: 20px;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.multiplicacao{
-    color: var(--branco);
-    border: solid var(--amarelo);
-    border-radius: 5px;
-    text-align: start;
-    font-size: 20px;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.subtracao{
+.AritmeticosCode{
+    display: block;
     color: var(--branco);
     border: solid var(--amarelo);
     border-radius: 5px;
@@ -217,7 +192,9 @@ footer a{
     margin-bottom: 20px;
 }
 
-#if{
+.condicaoCode{
+    width: pre-wrap;
+    display: block;
     color: var(--branco);
     border: solid var(--amarelo);
     border-radius: 5px;
@@ -247,17 +224,6 @@ footer a{
     font-size: 30px;
 }
 
-#swt{
-    color: var(--branco);
-    border: solid var(--amarelo);
-    border-radius: 5px;
-    text-align: start;
-    font-size: 20px;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
 .repeticao{
     margin: 30px;
 }
@@ -271,69 +237,33 @@ footer a{
     margin: 30px;
 }
 
-.for p{
+.for p, h2 {
     margin-top:15px;
     margin-bottom: 20px;
 }
 
-.for h2{
-    margin-top:15px;
-    margin-bottom: 20px;
-}
-
-#for{
-    color: var(--branco);
-    border: solid var(--amarelo);
-    border-radius: 5px;
-    text-align: start;
-    font-size: 20px;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-
-}
 
 .while{
     margin: 30px;
 }
 
-.while p {
+.while p, h2 {
     margin-top:15px;
     margin-bottom: 20px;
 }
 
-.while h2 {
-    margin-top:15px;
-    margin-bottom: 20px;
-}
-
-#while{
-    color: var(--branco);
-    border: solid var(--amarelo);
-    border-radius: 5px;
-    text-align: start;
-    font-size: 20px;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-
-}
 
 .do-while{
     margin: 30px;
 }
 
-.do-while p{
+.do-while p, h2{
     margin-top:15px;
     margin-bottom: 20px;
 }
 
-.do-while h2{
-    margin-top:15px;
-    margin-bottom: 20px;
-}
-
-#do-while{
+.repeticaoCode{ 
+    display: block;
     color: var(--branco);
     border: solid var(--amarelo);
     border-radius: 5px;
@@ -342,18 +272,13 @@ footer a{
     padding: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
-}
 
+}
 .funcoes{
     margin: 30px;
 }
 
-.funcoes p{
-    margin-top:15px;
-    margin-bottom: 20px;
-}
-
-.funcoes h2{
+.funcoes p, h2{
     margin-top:15px;
     margin-bottom: 20px;
 }
@@ -364,18 +289,8 @@ footer a{
 
 }
 
-#funcao1{
-    color: var(--branco);
-    border: solid var(--amarelo);
-    border-radius: 5px;
-    text-align: start;
-    font-size: 20px;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-#funcao2{
+.funcaoCode{
+    display: block;
     color: var(--branco);
     border: solid var(--amarelo);
     border-radius: 5px;
@@ -390,12 +305,7 @@ footer a{
     margin: 30px;
 }
 
-.arrow p{
-    margin-top:15px;
-    margin-bottom: 20px;
-}
-
-.arrow h2{
+.arrow p, h2{
     margin-top:15px;
     margin-bottom: 20px;
 }
@@ -406,7 +316,13 @@ footer a{
 
 }
 
-#arrow{
+
+.hoisting{
+    margin: 30px;
+}
+
+#hoisting{
+    display: block;
     color: var(--branco);
     border: solid var(--amarelo);
     border-radius: 5px;
@@ -415,24 +331,16 @@ footer a{
     padding: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
-
+    
 }
 
-.hoisting{
-    margin: 30px;
-}
-
-.hoisting p {
-    margin-top: 15px;
-    margin-bottom: 20px;
-}
-
-.hoisting h2 {
+.hoisting p, h2 {
     margin-top: 15px;
     margin-bottom: 20px;
 }
 
 #hoisting{
+    display: block;
     color: var(--branco);
     border: solid var(--amarelo);
     border-radius: 5px;
@@ -447,17 +355,13 @@ footer a{
     margin: 30px;
 }
 
-.array-listas p{
+.array-listas p, h2{
     margin-top: 15px;
     margin-bottom: 20px;
 }
 
-.array-listas h2{
-    margin-top: 15px;
-    margin-bottom: 20px;
-}
-
-.listas-array{
+.listas-arrayCode{
+    display: block;
     color: var(--branco);
     border: solid var(--amarelo);
     border-radius: 5px;
@@ -472,22 +376,13 @@ footer a{
     margin: 30px;
 }
 
-.Strings p{
+.Strings p, h2, li{
     margin-top: 15px;
     margin-bottom: 20px;
 }
 
-.Strings h2{
-    margin-top: 15px;
-    margin-bottom: 20px;
-}
-
-.Strings li{
-    margin-top: 15px;
-    margin-bottom: 20px;
-}
-
-.manipulaçãoString{
+.manipulacaoStringCode{
+    display: block;
     color: var(--branco);
     border: solid var(--amarelo);
     border-radius: 5px;
@@ -502,22 +397,13 @@ footer a{
     margin: 30px;
 }
 
-.math p {
-    margin-top: 15px;
-    margin-bottom: 20px
-}
-
-.math h2{
-    margin-top: 15px;
-    margin-bottom: 20px
-}
-
-.math li{
+.math p, h2, li{
     margin-top: 15px;
     margin-bottom: 20px
 }
 
 .mathCode{
+    display: block;
     color: var(--branco);
     border: solid var(--amarelo);
     border-radius: 5px;
@@ -550,20 +436,47 @@ footer a{
     
 }
 
-@media screen and (max-width:768px){
+.referencias{
+    margin-top: 30px ;
+
+}
+
+.referencias h1{
+    text-align: left;
+}
+
+.referencias a{
+    color: var(--amarelo2);
+    
+}
+
+@media screen and (min-width: 375px), (max-width:600px){
+
+    body{
+        padding: 0;
+    }
+
+    main{
+        padding: 10px;
+    }
 
     header{
-        margin-bottom: 30px;
+        padding: 20px, 20px, 0px, 20px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
     }
 
     header .titulo{
-        font-size: 40px;
+        font-size: 25px;
         text-align: left;
-        padding-left: 15px;
+        padding-left: 7px;
+        margin: 0px;
     }
 
     header img{
-        height: 170px;
+        height: 80px;
+        
+        
     }
 
     main{
@@ -572,7 +485,102 @@ footer a{
 
     footer{
         font-size: 14px;
+        margin: 30px;
     }
 
-   
+    .Contexto{
+        margin: 30px;
+        margin-top: 0px;
+    }
+
+    .linguagem{
+        margin: 30px;
+    }
+
+    .variavelCode{
+        font-size: 10px;
+        margin-top: 10px;
+    }
+
+    .AritmeticosCode{
+        font-size: 10px;
+        
+    }
+
+    .condicao{
+        margin: 30px;
+    }
+
+    .switch{
+        margin: 0px;
+
+    }
+
+    .condicaoCode{  
+        font-size: 10px;
+        width: 200px;
+        
+      
+    }
+
+    .for{
+        margin: 0px;
+    }
+
+    .while{
+        margin: 0px;
+    }
+
+    .do-while{
+        margin: 0px;
+    }
+
+    .repeticaoCode{ 
+        font-size: 10px;
+    }
+
+    .funcoes2{
+        margin: 0px;
+        
+    }
+    
+    .arrow{
+        margin: 0px;
+    }
+
+    .funcaoCode{
+        font-size: 10px;
+        width: 250px;
+        
+    }
+
+    #hoisting{
+        font-size: 10px;
+    }
+
+    .listas-arrayCode{
+        font-size: 10px;
+    }
+    .manipulacaoStringCode{
+        font-size: 10px;
+        width: 250px;
+    }
+
+    .mathCode{
+        display: block;
+        font-size: 10px;
+    }
+
+    .agradecimentos{
+        margin: 30px;
+    }
+
+    .referencias{
+        margin: 30px;
+    }
+
+
+    
+
+
 }
