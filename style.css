@@ -425,7 +425,8 @@ footer section{
 }
 
 .agradecimentos button{
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-right: 10px;
     padding: 15px;
     border-radius: 20px;
     border: solid var(--amarelo);
@@ -449,6 +450,7 @@ footer section{
     color: var(--amarelo2);
     
 }
+
 
 @media screen and (min-width: 375px), (max-width:600px){
 
