@@ -17,7 +17,7 @@
 }
 
 body{
-    background-color: var(--marrom);
+    background-color: var(--cinza);
     border: solid var(--amarelo);
     border-radius: 20px;
     padding: 20px;
